@@ -1,0 +1,57 @@
+main {
+  text-align: unset;
+  margin-top: 70px;
+  height: fit-content;
+}
+
+.result {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.webcam {
+  position: relative;
+  width: fit-content;
+  height: 600px;
+  margin-left: 100px;
+
+  a {
+    display: flex;
+
+    h1 {
+      margin-left: 50px;
+      z-index: 1;
+      color: #171717c7; 
+    }
+
+    img {
+      position: absolute;
+      top: 20%;
+      left: 42%;
+      width: 510px;
+      filter: blur(1.46px) brightness(1.29) contrast(0.61) grayscale(0.56) hue-rotate(-42deg) saturate(2.3) sepia(0.34);
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+  }
+
+  &:hover {
+    img {
+      top: 17%;
+      left: 36%;
+      width: 570px;
+      transform: rotate(-5deg);
+    }
+  }
+}
+
+.background {
+  width: 80%;
+  height: 50%;
+  background-color: #eaeed5;
+  position: absolute;
+  top: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 4px;
+}
