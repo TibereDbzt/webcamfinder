@@ -7,7 +7,7 @@
 @section('title', 'Search')
 
 @section('content')
-    <form class="searchCam" action="/result" method="get">
+    <form class="searchCam" action="./result" method="get">
         <input class="country js-input-country" type="text" name="country" placeholder="Country's name" required>
         <select class="categorie" name="categories" required>
             <option value="" selected disabled hidden>Categorie</option>
